@@ -15,6 +15,7 @@ signalingServer.onmessage = async (message) => {
         }
     } else if (data.type === 'new-peer') {
         // Connect to the new participant
+        // comment
         const peerId = data.id;
         setupPeerConnection(peerId, true);
     } else if (data.type === 'signal' && data.signal) {
